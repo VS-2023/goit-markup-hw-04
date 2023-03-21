@@ -6,6 +6,8 @@
   --team-color: #f4f4fd;
   --paragraph-color: #e7e9fc;
   --button-color: #404bbf;
+  --icon-color: #31d0aa;
+  --customers-color: #8e8f99;
   --portfolio-img-gap: 24px;
   --grad-people-office: linear-gradient(
     rgba(46, 47, 66, 0.7),
@@ -213,10 +215,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
-  width: 264px;
+  margin-bottom: 8px;
+  width: 100%;
   height: 112px;
-  background: #f4f4fd;
+  background: var(--team-color);
   border-radius: 4px;
 }
 
@@ -320,11 +322,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .team-soc-list {
   width: 40px;
   height: 40px;
-  display: block;
 }
 .team-soc-link {
   width: 100%;
@@ -334,14 +337,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: 1px solid var(--logo-color);
 }
+
 .team-soc-link:hover {
   background-color: var(--button-color);
 }
 .team-content {
   display: block;
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Customers */
@@ -363,7 +372,10 @@ body {
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
 }
 
 .customers-item {
@@ -372,12 +384,12 @@ body {
   align-items: center;
   height: 88px;
   width: 168px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--customers-color);
   border-radius: 4px;
 }
 
 .icon-customers {
-  fill: #8e8f99;
+  fill: var(--customers-color);
 }
 .customers-item:hover {
   fill: var(--button-color);
@@ -445,12 +457,13 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  outline: 1px solid var(--brend-color);
   background: rgba(255, 255, 255, 0.1);
 }
 
 .social-item-footer:hover {
   fill: var(--white);
-  background-color: #31d0aa;
+  background-color: var(--icon-color);
 }
 
 .icon-social-footer {
@@ -509,6 +522,13 @@ body {
   background-color: var(--button-color);
   color: var(--white-color);
 }
+.batton-portfolio:active {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--button-color);
+  color: var(--white-color);
+}
+
 /*  PORTFOLIO IMG*/
 .portfolio-img {
   display: flex;
