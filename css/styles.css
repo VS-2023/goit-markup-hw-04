@@ -144,7 +144,6 @@ body {
 .address-mail:focus {
   color: var(--button-color);
 }
-
 /* HERO IMAGE */
 .main {
   background-color: var(--white-color);
@@ -195,7 +194,9 @@ body {
 .button-hero:focus {
   background-color: var(--button-color);
 }
-
+.button-hero:active {
+  background-color: var(--button-color);
+}
 /* SECTION 1 */
 .priorities {
   display: flex;
@@ -252,7 +253,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
 /* SECTION 2 */
 .doing {
   padding-bottom: 120px;
@@ -272,7 +272,6 @@ body {
 .doing-page {
   display: flex;
 }
-
 /* SECTION 3 */
 .team {
   padding-top: 120px;
@@ -339,8 +338,7 @@ body {
   justify-content: center;
   outline: 1px solid var(--logo-color);
 }
-
-.team-soc-link:hover {
+.team-soc-link:hover .team-soc-link:focus {
   background-color: var(--button-color);
 }
 .team-content {
@@ -352,7 +350,6 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-
 /* Customers */
 .customers-section {
   padding-top: 120px;
@@ -369,7 +366,6 @@ body {
   margin-top: 0;
   margin-bottom: 72px;
 }
-
 .customers-list {
   display: flex;
   flex-direction: row;
@@ -377,33 +373,35 @@ body {
   padding: 0px;
   gap: 24px;
 }
-
 .customers-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 88px;
   width: 168px;
   border: 1px solid var(--customers-color);
   border-radius: 4px;
 }
-
+.customers-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
 .icon-customers {
   fill: var(--customers-color);
 }
-.customers-item:hover {
+.customers-item:hover,
+.customers-item:focus {
   fill: var(--button-color);
   border-color: var(--button-color);
   cursor: pointer;
 }
-.customers-item:hover .icon-customers {
+.customers-item:hover .icon-customers,
+.customers-item:focus .icon-customers {
   fill: var(--button-color);
 }
 .icon-customers {
   width: 104px;
   height: 56px;
 }
-
 /* FOOTER */
 .foter {
   background-color: var(--brend-color);
@@ -435,9 +433,7 @@ body {
   margin: 0 auto;
   display: flex;
 }
-
 /* Social media */
-
 .container-social-list-footer {
   margin-left: 120px;
 }
@@ -460,22 +456,19 @@ body {
   outline: 1px solid var(--brend-color);
   background: rgba(255, 255, 255, 0.1);
 }
-
-.social-item-footer:hover {
+.social-item-footer:hover,
+.social-item-footer:focus {
   fill: var(--white);
   background-color: var(--icon-color);
 }
-
 .icon-social-footer {
   height: 24px;
   width: 24px;
   fill: var(--white-color);
 }
-
-.icon-social-footer:hover {
+.icon-social-footer:hover .icon-social-footer:focus {
   fill: var(--white-color);
 }
-
 .contact-us {
   margin-bottom: 24px;
   font-weight: 500;
@@ -484,7 +477,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-color);
 }
-
 /* PORTFOLIO BATTON */
 .project-section {
   padding-top: 96px;
@@ -539,7 +531,7 @@ body {
 .portfolio {
   flex-basis: calc((100% - 48px) / 3);
 }
-.portfolio:hover {
+.portfolio:hover .portfolio:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
