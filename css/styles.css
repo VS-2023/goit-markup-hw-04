@@ -370,7 +370,6 @@ body {
 .customers-list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   margin-top: 8px;
   gap: 24px;
 }
@@ -385,6 +384,7 @@ body {
   border: 1px solid var(--customers-color);
   fill: currentColor;
   color: var(--customers-color);
+  border-radius: 4px;
 }
 .customers-icon-link:hover,
 .customers-icon-link:focus {
